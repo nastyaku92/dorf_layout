@@ -1,0 +1,16 @@
+
+.banner-diler-wrap {
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+}
+.banner-diler-wrap.show {
+    opacity: 1;
+}
+footer {
+    color: white
+}
+@media (min-width: 568px) {
+    .banner-diler-slider .video-js .vjs-control-bar {
+        padding-left: var(--left-menu);
+    }
+}

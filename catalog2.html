@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>DORF</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <script type="module" crossorigin src="/js/main.js"></script>
+  <link rel="stylesheet" crossorigin href="/css/main.css">
+  <link rel="stylesheet" crossorigin href="/css/cart.css">
+  <link rel="stylesheet" crossorigin href="/css/catalog.css">
+  <link rel="stylesheet" crossorigin href="/css/custom.css">
+    <link rel="stylesheet" href="/plugins/slinky/css/slinky.min.css">
+    <link rel="stylesheet" href="/plugins/video.js/dist/video-js.min.css">
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#0d0b0c">
+</head>
+
+<body>
+<div class="page-container">
+    <div class="page-container__left">
+
+        <div class="offcanvas-below-header" id="offcanvasMenu">
+
+            <div class="offcanvas-below-inner">
+                <div class="h-burger">
+                    <button class="nav_burger" type="button">
+                        <div class="nav-icon1">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </button>
+                </div>
+
+                <div class="slinky-menu-wrap offcanvas-below-inner_left">
+                    <div class="slinky-menu">
+                        <ul>
+                            <li><a href="#">Глубокорыхлители</a></li>
+                            <li><a href="#">Дискаторы</a></li>
+                            <li><a href="#">Сеялки</a></li>
+                            <li><a href="#">Гарантии/Достижения</a></li>
+                            <li><a href="catalog.html">Сервис и запчасти</a></li>
+                            <li><a href="about.html">О заводе</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="offcanvas-below-inner_left offcanvas-below-inner_left-pl mb-4 mt-4">
+                    <!-- <button type="button" class="btn btn-light btn-close-left" data-bs-toggle="modal"
+                        data-bs-target="#modal_form-feed" data-whatever="Узнать цену">Узнать цену</button> -->
+                    <button type="button" class="btn btn-light btn-close-left" data-bs-toggle="modal"
+                        data-bs-target="#modal_form-feed" data-whatever="Хочу сотрудничать"><span class="d-none d-sm-inline">Хочу сотрудничать</span><span class="d-sm-none">Сотрудничать</span></button>
+                </div>
+
+                <div class="offcanvas-below-inner_left offcanvas-below-inner_left-pl mb-5">
+                    <div class="mb-3">
+                        <a href="tel:">+7 (962) 331 80 00</a>
+                    </div>
+                    <div>
+                        <a href="mailto:zakaz@dorf-tech.ru">zakaz@dorf-tech.ru</a>
+                    </div>
+                </div>
+
+                <div class="socials">
+                    <a href="#" target="_blank">
+                        <i class="icon icon-max"></i>
+                    </a>
+                    <a href="#" target="_blank">
+                        <i class="icon icon-vk"></i>
+                    </a>
+                    <a href="#" target="_blank">
+                        <i class="icon icon-rutube"></i>
+                    </a>
+                    <a href="#" target="_blank">
+                        <i class="icon icon-telegram"></i>
+                    </a>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="page-container__middle w-100">
+        <header class="fixed-header trig-fade enable-trig" data-aos="fade-in">
+
+            <div class="container trig-target trig-block">
+                <div class="d-flex align-items-center justify-content-between">
+
+                    <div class="h-burger d-sm-none">
+                        <button class="nav_burger" type="button">
+                            <div class="nav-icon1">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </button>
+                    </div>
+
+                    <div class="h-logo me-auto">
+                        <a href="/">
+                            <img src="/images/logo.svg" alt="Logo" width="98" height="34">
+                        </a>
+                    </div>
+
+                    <div class="h-manager d-flex align-items-center">
+
+                        <div class="h-cart">
+                            <span>
+                                <a href="cart.html">
+                                    <svg class="flex-shrink-0" width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M1 1L2.2 5M2.2 5L7 21H29V9C29 6.79086 27.2091 5 25 5H2.2ZM25 29C23.8954 29 23 28.1046 23 27C23 25.8954 23.8954 25 25 25C26.1046 25 27 25.8954 27 27C27 28.1046 26.1046 29 25 29ZM9 27C9 25.8954 9.89543 25 11 25C12.1046 25 13 25.8954 13 27C13 28.1046 12.1046 29 11 29C9.89543 29 9 28.1046 9 27Z"
+                                            stroke="white" />
+                                    </svg>
+                                    <div class="counter">25</div>
+                                </a>
+                            </span>
+                        </div>
+
+                        <!-- <button type="button" class="btn btn-outline-light" data-bs-toggle="modal"
+                            data-bs-target="#modal_form-feed" data-whatever="Узнать цену">Узнать цену</button>
+                         --><button type="button" class="btn btn-outline-light" data-bs-toggle="modal"
+                            data-bs-target="#modal_form-feed" data-whatever="Хочу сотрудничать"><span class="d-none d-sm-inline">Хочу сотрудничать</span><span class="d-sm-none">Сотрудничать</span></button>
+                    </div>
+
+                </div>
+            </div>
+        </header>
+
+
+        <main class="main">
+
+    <div class="container">
+
+
+
+        <div class="row">
+
+            <div class="col-12 col-xl-3 col-xxl-4 mb-5">
+
+                <div class="bl-gradient bl-sticky h-100-">
+
+                    <div class="bl-p h-100">
+                        <div class="bl-sticky">
+                            <div class="h4">DORF JUGGERNAUT</div>
+
+                            <select name="select" id="seachable-select" class="wide select2">
+                                <option value="/value1" selected>4000</option>
+                                <option value="/value2">5000</option>
+                                <option value="/value3">6000</option>
+                            </select>
+
+                            <div class="clearfix mb-3"></div>
+
+                            <div class="btns-catalog">
+                                <a href="catalog.html" class="btn btn-outline-light">Каталог запчастей</a>
+                                <a href="catalog2.html" class="btn btn-light">Изнашиваемые детали</a>
+                                <a href="catalog3.html" class="btn btn-outline-light">Инструкции по эксплуатации</a>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+
+
+
+                </div>
+            </div>
+
+            <div class="col-12 col-xl-9 col-xxl-8">
+                <h1 class="mb-4">Изнашиваемые детали <br>DORF JUGGERNAUT 4000</h1>
+
+                <img src="/images/catalog2.png" alt="" class="img-fluid rounded-1">
+
+
+
+                <div class="catalog-grid-wrap mt-3">
+
+
+                    <div class="catalog-grid row">
+
+                        <div class="col-6 col-md-4 col-lg-3 mb-3">
+
+                            <div class="product-item">
+                                <div class="product-img">
+                                    <img src="/images/item.png" alt="" class="">
+                                </div>
+                                <div class="product-item-title fw-bold">
+                                    Наименование детали возможно длинное
+                                </div>
+                                <div class="product-item-article opacity-50">
+                                    Арт. DFED125D
+                                </div>
+                                <div class="product-item-actions">
+
+                                    <div class="product-item-price">
+                                        2 568 ₽
+                                    </div>
+
+                                    <button class="btn btn-sm btn-light btn-svg">
+                                        <i class="icon icon-cart"></i>
+                                    </button>
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 mb-3">
+
+                            <div class="product-item">
+                                <div class="product-img">
+                                    <img src="/images/item.png" alt="" class="">
+                                </div>
+                                <div class="product-item-title fw-bold">
+                                    Наименование детали возможно длинное
+                                </div>
+                                <div class="product-item-article opacity-50">
+                                    Арт. DFED125D
+                                </div>
+                                <div class="product-item-actions">
+
+                                    <div class="product-item-price">
+                                        2 568 ₽
+                                    </div>
+
+                                    <button class="btn btn-sm btn-light btn-svg">
+                                        <i class="icon icon-cart"></i>
+                                    </button>
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 mb-3">
+
+                            <div class="product-item">
+                                <div class="product-img">
+                                    <img src="/images/item.png" alt="" class="">
+                                </div>
+                                <div class="product-item-title fw-bold">
+                                    Наименование детали возможно длинное
+                                </div>
+                                <div class="product-item-article opacity-50">
+                                    Арт. DFED125D
+                                </div>
+                                <div class="product-item-actions">
+
+                                    <div class="product-item-price">
+                                        2 568 ₽
+                                    </div>
+
+                                    <button class="btn btn-sm btn-light btn-svg">
+                                        <i class="icon icon-cart"></i>
+                                    </button>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+
+                <section class="position-relative mb-5 mt-5">
+                    <div class="form-block form-2">
+                        <div class="block-gray-form block-gray">
+                            <div class="h1 text-center">Помочь в подборе запчастей</div>
+                            <p class="fs-20 text-center opacity-50 mb-4">
+                                Заполните форму ниже, и мы перезвоним вам в ближайшее время, чтобы <br>ответить на
+                                все ваши вопросы по нашей технике.
+                            </p>
+                            <form class="form-main ajax_form" id="form-feed_69be41998518f" novalidate>
+                                <input type="hidden" name="title" value="">
+                                <input type="text" class="s-message" name="s-message" value="" style="display:none">
+                                <p class="text-center"></p>
+                                <div class="row row-10">
+                                    <div class="col-12 col-sm-4">
+                                        <div class="mb-2 position-relative gradient-border-wrapper">
+                                            <input type="text" class="form-control" name="name" placeholder="Имя"
+                                                required="">
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-4">
+                                        <div class="mb-2 position-relative gradient-border-wrapper">
+                                            <input type="tel" class="form-control" name="phone"
+                                                placeholder="+7 (___) ___ - __ - __" required="">
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-4">
+                                        <div class="mb-2 position-relative text-center">
+                                            <button type="submit" class="btn btn-light w-100">Перезвонить <span
+                                                    class="d-none d-lg-inline">мне</span></button>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="mb-0 position-relative agreement">
+                                            <div class="form-check">
+                                                <input checked="" type="checkbox" class="form-check-input"
+                                                    id="exampleCheck69be41998518f" name="agreement" required="">
+                                                <label class="form-check-label" for="exampleCheck69be41998518f">
+                                                    Согласие на обработку персональных данных. C политикой
+                                                    конфиденциальности ознакомлен
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+                <script>
+                    document.addEventListener('DOMContentLoaded', function () {
+                        setupFormValidation(document.getElementById('form-feed_69be41998518f'), {
+                            hasAgreement: true,
+                            hasEmail: false,
+                            successMessage: 'Консультация успешно заказана!',
+                            modalFormId: 'modal_form-feed',
+                            modalResultId: 'modal_form-result',
+                            customData: {
+                                //title: 'Получите бесплатную <br>консультацию от наших юристов'
+                            }
+                        });
+                    });
+                </script>
+
+            </div>
+
+
+
+
+        </div>
+
+
+
+    </div>
+
+
+
+    <script src="/js/slinky-vanilla.js"></script>
+    <script src="/plugins/inputmask/inputmask.min.js"></script>
+    <script src="/js/scripts.js"></script>
+
+</main>
+<footer>
+    <div class="container">
+        <div class="row">
+
+            <div class="col-12 col-sm-12 col-lg-3 mb-3 m1-border order-1 order-sm-0">
+
+                <div class="row">
+                    <div class="col-12 col-sm-2 col-lg-12">
+                        <div class="mb-3">
+                            <img src="/images/logo.svg" alt="" width="98" height="34" class="f-logo">
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-5 col-md-4 col-lg-12 mb-3">
+                        <div class="socials">
+                            <a href="#" target="_blank">
+                                <i class="icon icon-max"></i>
+                            </a>
+                            <a href="#" target="_blank">
+                                <i class="icon icon-vk"></i>
+                            </a>
+                            <a href="#" target="_blank">
+                                <i class="icon icon-rutube"></i>
+                            </a>
+                            <a href="#" target="_blank">
+                                <i class="icon icon-telegram"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-5 col-md-6 col-lg-12">
+                        <a href="tel:" type="button" class="btn btn-outline-light">Перезвонить мне</a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4 mb-3 m2-border order-0 order-sm-1">
+
+                <div class="footer-menu">
+                    <div class="d-flex flex-column gap-3">
+                        <a class="nav-link" href="#">Глубокорыхлители</a>
+                        <a class="nav-link" href="#">Дискаторы</a>
+                        <a class="nav-link" href="#">Сеялки</a>
+                        <a class="nav-link" href="#">Гарантии/Достижения</a>
+                        <a class="nav-link" href="#">Сервис и запчасти</a>
+                        <a class="nav-link" href="#">О заводе</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4 m3-border order-2">
+                <div class="font-weight-bold text-lg-right">
+                    <div class="mb-3">
+                        Производственная площадка DORF
+                    </div>
+                    <div class="mb-3">
+                        г. Воронеж, ул. Ростовская, 78
+                    </div>
+
+                    <div class="mb-3">
+                        <a href="tel:+79009009090">
+                            +7 (962) 331 80 00
+                        </a>
+                    </div>
+                    <div class="mb-3">
+                        <a href="mailto:zakaz@dorf-tech.ru">
+                            zakaz@dorf-tech.ru
+                        </a>
+                    </div>
+                    <div class="mb-3">
+                      <button type="button" class="btn btn-light" data-bs-toggle="modal"
+                            data-bs-target="#modal_form-feed" data-whatever="Узнать цену">Узнать цену</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 m4-border order-3">
+                <div class="mb-3 opacity-50">
+                    © 2025 Dorf
+                </div>
+                <div class="mb-3 opacity-50">
+                    Общество с ограниченной ответственностью "ДОРФ" ОГРН 1243600007958 / ИНН 3663167916
+                </div>
+                <div class="mb-3 d-inline-flex gap-3 flex-wrap">
+                    <a class="text-decoration-underline" href="polite.html">Политика обработки персональных данных</a>
+                    <a class="text-decoration-underline" href="#">Политика конфендициальности</a>    
+                </div>
+                <div class="opacity-50">
+                    Мы используем файлы cookie, чтобы улучшить работу сайта и предоставить вам больше возможностей. <br>
+                    Продолжая использовать сайт, вы соглашаетесь с условиями использования cookie.
+                </div>
+            </div>
+
+        </div>
+    </div>
+</footer>
+
+
+<!-- modal start -->
+<div class="modal modal-custom fade" id="modal_form-feed" tabindex="-1" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-content_inner">
+                <button type="button" class="btn-close close-custom" data-bs-dismiss="modal"
+                    aria-label="Close"></button>
+                <div class="modal-title text-center fs-1">Узнать цену</div>
+                <p class="text-center"></p>
+                <form class="form-main ajax_form" id="form-feed" novalidate>
+                    <input type="text" class="s-message" name="s-message" value="">
+                    <div class="mb-3 position-relative gradient-border-wrapper">
+                        <input type="text" class="form-control" name="name" placeholder="Ваше имя" required>
+                    </div>
+                    <div class="mb-3 position-relative gradient-border-wrapper">
+                        <input type="tel" class="form-control" name="phone" placeholder="+7 (___) ___ - __ - __"
+                            required>
+                    </div>
+                    <div class="mb-3 position-relative text-center">
+                        <button type="submit" class="btn btn-primary w-100">Узнать цену</button>
+                    </div>
+                    <div class="col-12">
+                        <div class="mb-0 position-relative agreement">
+                            <div class="form-check">
+                                <input checked="" type="checkbox" class="form-check-input"
+                                    id="modal_form-feedm" name="agreement" required="">
+                                <label class="form-check-label" for="modal_form-feedm">
+                                    Согласие на обработку персональных данных. C политикой конфиденциальности ознакомлен
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <div class="form-main__result">
+                    <div class="form-title_result text-center h1"></div>
+                    <p class="form-description_result text-center"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal modal-custom fade" id="modal_form-result" tabindex="-1" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-content_inner">
+                <button type="button" class="btn-close close-custom" data-bs-dismiss="modal"
+                    aria-label="Close"></button>
+                <div class="modal-title text-center fs-1">Спасибо за заявку!</div>
+                <p class="text-center">Наш специалист свяжется с вами в течение дня</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        setupFormValidation(document.getElementById('form-feed'), {
+            hasAgreement: true,
+            successMessage: 'Сообщение успешно отправлено!',
+            modalFormId: 'modal_form-feed',
+            modalResultId: 'modal_form-result',
+            customData: {}
+        });
+    });
+</script>
+<script>
+    /* $(function () {
+        $("#form-feed").validate({
+            // rules: {
+            //     validationField: {
+            //         number: true,
+            //         required: true,
+            //     }
+            // },
+            // messages: {
+            //     validationField: {
+            //         number: "Enter an integer value.",
+            //         required: "Required Field",
+            //     }
+            // },
+            errorClass: 'custom-error',
+            //validClass: 'valid',
+        });
+    }); */
+</script>
+<!-- modal end -->
+
+</div>
+</div>
+</div>
+
+<script src="/plugins/video.js/dist/video.min.js"></script>
+</body>
+
+</html>

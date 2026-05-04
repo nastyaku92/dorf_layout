@@ -1,0 +1,1533 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>DORF</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+    <link rel="stylesheet" href="/plugins/slinky/css/slinky.min.css">
+    <link rel="stylesheet" href="/plugins/video.js/dist/video-js.min.css">
+
+      <script type="module" crossorigin src="/js/main.js"></script>
+  <link rel="stylesheet" crossorigin href="/css/main.css">
+  <link rel="stylesheet" crossorigin href="/css/cart.css">
+  <link rel="stylesheet" crossorigin href="/css/catalog.css">
+  <link rel="stylesheet" crossorigin href="/css/custom.css">
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#0d0b0c">
+</head>
+
+<body>
+<div class="page-container">
+    <div class="page-container__left">
+
+        <div class="offcanvas-below-header" id="offcanvasMenu">
+
+            <div class="offcanvas-below-inner">
+                <div class="h-burger">
+                    <button class="nav_burger" type="button">
+                        <div class="nav-icon1">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </button>
+                </div>
+
+                <div class="slinky-menu-wrap offcanvas-below-inner_left">
+                    <div class="slinky-menu">
+                        <ul>
+                            <li><a href="#">Глубокорыхлители</a></li>
+                            <li><a href="#">Дискаторы</a></li>
+                            <li><a href="#">Сеялки</a></li>
+                            <li><a href="#">Гарантии/Достижения</a></li>
+                            <li><a href="catalog.html">Сервис и запчасти</a></li>
+                            <li><a href="about.html">О заводе</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="offcanvas-below-inner_left offcanvas-below-inner_left-pl mb-4 mt-4">
+                    <!-- <button type="button" class="btn btn-light btn-close-left" data-bs-toggle="modal"
+                        data-bs-target="#modal_form-feed" data-whatever="Узнать цену">Узнать цену</button> -->
+                    <button type="button" class="btn btn-light btn-close-left" data-bs-toggle="modal"
+                        data-bs-target="#modal_form-feed" data-whatever="Хочу сотрудничать"><span class="d-none d-sm-inline">Хочу сотрудничать</span><span class="d-sm-none">Сотрудничать</span></button>
+                </div>
+
+                <div class="offcanvas-below-inner_left offcanvas-below-inner_left-pl mb-5">
+                    <div class="mb-3">
+                        <a href="tel:">+7 (962) 331 80 00</a>
+                    </div>
+                    <div>
+                        <a href="mailto:zakaz@dorf-tech.ru">zakaz@dorf-tech.ru</a>
+                    </div>
+                </div>
+
+                <div class="socials">
+                    <a href="#" target="_blank">
+                        <i class="icon icon-max"></i>
+                    </a>
+                    <a href="#" target="_blank">
+                        <i class="icon icon-vk"></i>
+                    </a>
+                    <a href="#" target="_blank">
+                        <i class="icon icon-rutube"></i>
+                    </a>
+                    <a href="#" target="_blank">
+                        <i class="icon icon-telegram"></i>
+                    </a>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="page-container__middle w-100">
+        <header class="fixed-header trig-fade enable-trig" data-aos="fade-in">
+
+            <div class="container trig-target trig-block">
+                <div class="d-flex align-items-center justify-content-between">
+
+                    <div class="h-burger d-sm-none">
+                        <button class="nav_burger" type="button">
+                            <div class="nav-icon1">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </button>
+                    </div>
+
+                    <div class="h-logo me-auto">
+                        <a href="/">
+                            <img src="/images/logo.svg" alt="Logo" width="98" height="34">
+                        </a>
+                    </div>
+
+                    <div class="h-manager d-flex align-items-center">
+
+                        <div class="h-cart">
+                            <span>
+                                <a href="cart.html">
+                                    <svg class="flex-shrink-0" width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M1 1L2.2 5M2.2 5L7 21H29V9C29 6.79086 27.2091 5 25 5H2.2ZM25 29C23.8954 29 23 28.1046 23 27C23 25.8954 23.8954 25 25 25C26.1046 25 27 25.8954 27 27C27 28.1046 26.1046 29 25 29ZM9 27C9 25.8954 9.89543 25 11 25C12.1046 25 13 25.8954 13 27C13 28.1046 12.1046 29 11 29C9.89543 29 9 28.1046 9 27Z"
+                                            stroke="white" />
+                                    </svg>
+                                    <div class="counter">25</div>
+                                </a>
+                            </span>
+                        </div>
+
+                        <!-- <button type="button" class="btn btn-outline-light" data-bs-toggle="modal"
+                            data-bs-target="#modal_form-feed" data-whatever="Узнать цену">Узнать цену</button>
+                         --><button type="button" class="btn btn-outline-light" data-bs-toggle="modal"
+                            data-bs-target="#modal_form-feed" data-whatever="Хочу сотрудничать"><span class="d-none d-sm-inline">Хочу сотрудничать</span><span class="d-sm-none">Сотрудничать</span></button>
+                    </div>
+
+                </div>
+            </div>
+        </header>
+
+
+        <main class="main">
+
+    <div class="banner-diler-wrap">
+
+        <div class="banner-diler-slider">
+
+            <div class="banner-about">
+
+                <div class="swiper swiper-about h-100">
+                    <div class="swiper-wrapper h-100">
+
+                        <div class="swiper-slide">
+
+                            <video id="my-player" class="video-js" autoplay loop muted controls="false" preload="auto"
+                                poster="/images/diler.png" data-setup='{}'>
+                                <source src="/assets/ocean.mp4" type="video/mp4">
+                                </source>
+                                <p class="vjs-no-js">
+                                    To view this video please enable JavaScript, and consider upgrading to a
+                                    web browser that
+                                    <a href="https://videojs.com/html5-video-support/" target="_blank">
+                                        supports HTML5 video
+                                    </a>
+                                </p>
+                            </video>
+
+                            <!--                             <img loading="lazy" class="img-abs" src="/src/assets/images/diler/diler.png" alt="">
+ -->
+                            <div class="container container-slide">
+                                <div class="h1">Инженерный глубокорыхлитель <br>DORF Juggernaut 4000</div>
+                                <ul class="ul color-white">
+                                    <li>Дешевле конкурентов на 1 400 000 рублей</li>
+                                    <li>Выгода при покупке до 2 000 000 рублей</li>
+                                    <li>Глубокая обработка почвы для самых тяжелых условий</li>
+                                </ul>
+                                <a href="#" target="_blank" type="button" class="me-2 btn btn-outline-light mb-3">
+                                    Подробнее
+                                </a>
+                                <button type="button" class="btn btn-light mb-3" data-bs-toggle="modal"
+                                    data-bs-target="#modal_form-feed" data-whatever="Хочу сотрудничать">Хочу
+                                    сотрудничать</button>
+
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img loading="lazy" class="img-abs" src="/images/a2.png" alt="">
+                            <div class="container container-slide">
+                                <div class="h1">Другой оффер о компании / заводе</div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="container swiper-pagination-banner-container">
+                <div class="swiper-pagination swiper-pagination-banner ffu">
+
+                    <div class="pagination-bullet pagination-bullet-banner active" data-slide="1">
+                        <span class="line"></span>
+                        <span>01</span>
+                    </div>
+                    <div class="pagination-bullet pagination-bullet-banner " data-slide="2">
+                        <span class="line"></span>
+                        <span>02</span>
+                    </div>
+                    <div class="pagination-bullet pagination-bullet-banner" data-slide="3">
+                        <span class="line"></span>
+                        <span>03</span>
+                    </div>
+
+
+                </div>
+            </div>
+
+
+
+        </div>
+
+
+
+
+        <div class="d-flex flex-column flex-sm-row flex-wrap banner-diler">
+
+            <a href="#" class="banner-diler-item"">
+                        <div class=" banner-diler-item-dectop"
+                style="background-image: url(/images/b1-1.png);">
+        </div>
+
+        <div class="banner-diler-item__title h4">
+            Глубокорыхлители
+        </div>
+        <div class="banner-diler-item__link active-">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="40" height="40" rx="4" fill="url(#paint0_linear_234_12151)" fill-opacity="0.15" />
+                <rect x="0.5" y="0.5" width="39" height="39" rx="3.5" stroke="url(#paint1_linear_234_12151)"
+                    stroke-opacity="0.5" />
+                <path d="M27.9999 19.9998L22.6666 14.6665M27.9999 19.9998L22.6666 25.3332M27.9999 19.9998H11.3333"
+                    stroke="white" stroke-width="2" />
+                <defs>
+                    <linearGradient id="paint0_linear_234_12151" x1="31.0309" y1="40" x2="3.21822" y2="9.42391"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="white" />
+                        <stop offset="1" stop-color="white" stop-opacity="0" />
+                    </linearGradient>
+                    <linearGradient id="paint1_linear_234_12151" x1="13.5052" y1="-4.02062" x2="25.8763" y2="43.8144"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="white" />
+                        <stop offset="1" stop-color="white" stop-opacity="0" />
+                    </linearGradient>
+                </defs>
+            </svg>
+        </div>
+        </a>
+        <a href="#" class="banner-diler-item">
+            <div class="banner-diler-item-dectop" style="background-image: url(/images/b1-2.png);"></div>
+
+            <div class="banner-diler-item__title h4">
+                Дискаторы
+            </div>
+            <div class="banner-diler-item__link">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="40" height="40" rx="4" fill="url(#paint0_linear_234_12151)" fill-opacity="0.15" />
+                    <rect x="0.5" y="0.5" width="39" height="39" rx="3.5" stroke="url(#paint1_linear_234_12151)"
+                        stroke-opacity="0.5" />
+                    <path d="M27.9999 19.9998L22.6666 14.6665M27.9999 19.9998L22.6666 25.3332M27.9999 19.9998H11.3333"
+                        stroke="white" stroke-width="2" />
+                    <defs>
+                        <linearGradient id="paint0_linear_234_12151" x1="31.0309" y1="40" x2="3.21822" y2="9.42391"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="white" />
+                            <stop offset="1" stop-color="white" stop-opacity="0" />
+                        </linearGradient>
+                        <linearGradient id="paint1_linear_234_12151" x1="13.5052" y1="-4.02062" x2="25.8763"
+                            y2="43.8144" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="white" />
+                            <stop offset="1" stop-color="white" stop-opacity="0" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div>
+        </a>
+        <a href="#" class="banner-diler-item">
+            <div class="banner-diler-item-dectop" style="background-image: url(/images/b1-3.png);"></div>
+
+            <div class="banner-diler-item__title h4">
+                Сеялки
+            </div>
+            <div class="banner-diler-item__link">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="40" height="40" rx="4" fill="url(#paint0_linear_234_12151)" fill-opacity="0.15" />
+                    <rect x="0.5" y="0.5" width="39" height="39" rx="3.5" stroke="url(#paint1_linear_234_12151)"
+                        stroke-opacity="0.5" />
+                    <path d="M27.9999 19.9998L22.6666 14.6665M27.9999 19.9998L22.6666 25.3332M27.9999 19.9998H11.3333"
+                        stroke="white" stroke-width="2" />
+                    <defs>
+                        <linearGradient id="paint0_linear_234_12151" x1="31.0309" y1="40" x2="3.21822" y2="9.42391"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="white" />
+                            <stop offset="1" stop-color="white" stop-opacity="0" />
+                        </linearGradient>
+                        <linearGradient id="paint1_linear_234_12151" x1="13.5052" y1="-4.02062" x2="25.8763"
+                            y2="43.8144" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="white" />
+                            <stop offset="1" stop-color="white" stop-opacity="0" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div>
+        </a>
+        <a href="#" class="banner-diler-item">
+            <div class="banner-diler-item-dectop" style="background-image: url(/images/b1-4.png);"></div>
+
+            <div class="banner-diler-item__title h4">
+                Запчасти
+            </div>
+            <div class="banner-diler-item__link">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="40" height="40" rx="4" fill="url(#paint0_linear_234_12151)" fill-opacity="0.15" />
+                    <rect x="0.5" y="0.5" width="39" height="39" rx="3.5" stroke="url(#paint1_linear_234_12151)"
+                        stroke-opacity="0.5" />
+                    <path d="M27.9999 19.9998L22.6666 14.6665M27.9999 19.9998L22.6666 25.3332M27.9999 19.9998H11.3333"
+                        stroke="white" stroke-width="2" />
+                    <defs>
+                        <linearGradient id="paint0_linear_234_12151" x1="31.0309" y1="40" x2="3.21822" y2="9.42391"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="white" />
+                            <stop offset="1" stop-color="white" stop-opacity="0" />
+                        </linearGradient>
+                        <linearGradient id="paint1_linear_234_12151" x1="13.5052" y1="-4.02062" x2="25.8763"
+                            y2="43.8144" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="white" />
+                            <stop offset="1" stop-color="white" stop-opacity="0" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div>
+        </a>
+    </div>
+    </div>
+
+
+
+
+    <section class="mb-5">
+        <div class="container">
+
+            <div class="h1 mb-4">DORF</div>
+
+            <div class="row flex-lg-row">
+                <div class="col-12 col-xl-6 flex-grow-1 ffu">
+
+                    <p>Новый российский завод сельхозмашиностроения. Основная специализация: модифицированные
+                        комбинированные глубокорыхлители премиального качества (почвообработка)</p>
+
+                    <div class="row mb-3 row-abouts fs-14">
+                        <div class="col-12 col-sm-6">
+                            <div class="h-100 bl-gradient">
+                                <div class="about-item h-100 bl-p p-3 ffu">
+                                    <div class="color-white-07">
+                                        Собственный завод, разработки и самостоятельный выпуск комплектующих
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <div class="h-100 bl-gradient">
+                                <div class="about-item h-100 bl-p p-3 ffu">
+                                    <div class="color-white-07">
+                                        Эксклюзивные скидки от 16% до 32%
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <div class="h-100 bl-gradient">
+                                <div class="about-item h-100 bl-p p-3 ffu">
+                                    <div class="color-white-07">
+                                        Работа с новым российским брендом премиум-класса высочайшего качества
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <div class="h-100 bl-gradient">
+                                <div class="about-item h-100 bl-p p-3 ffu">
+                                    <div class="color-white-07">
+                                        Мы настолько уверены в себе, что готовы к встрече на производстве каждый день
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+                    <div class="bl-gradient rounded-3 bl-h bl-h-2-">
+                        <img class="rounded-3" src="/images/img2.png" alt="" loading="lazy">
+
+                    </div>
+                </div>
+                <div class="col-12 col-xl-6 col-xl-516 ffu">
+                    <div class="d-flex flex-column-reverse flex-xl-column">
+                        <div class="bl-gradient rounded-3 bl-h bl-h-2-">
+                            <img class="rounded-3" src="/images/about3.png" alt="" loading="lazy">
+                        </div>
+                        <div class="">
+                            <p>НОВЫЕ российские глубокорыхлители премиум-класса.</p>
+                            <p>Наша цель – снабдить аграриев РФ качественными орудиями для первичной обработки почвы</p>
+                            <ul class="ul">
+                                <li>Дешевле конкурентов на 1 400 000 рублей</li>
+                                <li>Выгода при покупке до 2 000 000 рублей</li>
+                                <li>Глубокая обработка почвы для самых тяжелых условий</li>
+                            </ul>
+                            <button type="button" class="btn btn-outline-light mb-3" data-bs-toggle="modal"
+                                data-bs-target="#modal_form-feed" data-whatever="Хочу сотрудничать">Хочу
+                                сотрудничать</button>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="mb-5">
+        <div class="container">
+
+            <div class="h1 mb-4">Как работает оборудование</div>
+
+            <!-- Nav tabs -->
+            <div class="swiper swiperFreeMode">
+                <div class="nav- nav-tabs- swiper-wrapper mb-4" id="myTab" role="tablist">
+                    <div class="swiper-slide nav-item-" role="presentation">
+                        <button class="btn btn-outline-light active" id="home-tab" data-bs-toggle="tab"
+                            data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">
+                            Глубокорыхлитель
+                        </button>
+                    </div>
+                    <div class="swiper-slide nav-item-" role="presentation">
+                        <button class="btn btn-outline-light" id="profile-tab" data-bs-toggle="tab"
+                            data-bs-target="#profile" type="button" role="tab" aria-controls="profile"
+                            aria-selected="false">
+                            Дискатор
+                        </button>
+                    </div>
+                    <div class="swiper-slide nav-item-" role="presentation">
+                        <button class="btn btn-outline-light" id="messages-tab" data-bs-toggle="tab"
+                            data-bs-target="#messages" type="button" role="tab" aria-controls="messages"
+                            aria-selected="false">
+                            Сеялки
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+
+                    <div class="row">
+                        <div class="col-12 col-lg-6 flex-grow-1 ffu">
+
+                            <div class="h4 mb-3">Глубокорыхлители</div>
+
+                            <p>Диски «ромашки» диаметром 68 см измельчают и перемешивают пожнивные остатки. Коническая
+                                форма
+                                диска обеспечивает стабильный угол атаки – независимо от износа диска и заглубления
+                            <p>Интенсивное перемешивание и рыхление почвы обеспечивают 2 ряда стоек с пружинной или
+                                гидравлической защитой и лапами. Глубина рыхления – 35 см
+                            </p>
+                            <p>Однорядная система тарельчатых дисков перед катком интенсивно измельчает крупные комья и
+                                заделывает борозды после лап глубокорыхлителя, выравнивая поверхность перед катком </p>
+                            </p>
+
+                            <p>
+                                <a class="text-decoration-underline" href="#">Читать больше</a>
+                            </p>
+
+
+                            <a href="#" target="_blank" type="button" class="btn btn-outline-light mb-3">Скачать
+                                «чек-лист»
+                                почвенной оценки</a>
+                        </div>
+                        <div class="col-12 col-lg-6 col-516">
+
+                            <div class="bl-gradient rounded-3 bl-h">
+
+                                <div class="swiper swiper-gallery h-100">
+                                    <div class="swiper-wrapper h-100">
+                                        <div class="swiper-slide">
+                                            <div class="slide-video" data-class="video-fancybox" data-fancybox="videos"
+                                                data-type="iframe" data-src="/videos/ocean.mp4">
+                                                <img class="rounded-3" src="/images/img3.png" alt=""
+                                                    loading="lazy">
+                                            </div>
+
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="slide-video" data-class="video-fancybox" data-fancybox="videos"
+                                                data-type="iframe" data-src="/videos/ocean.mp4">
+                                                <img class="rounded-3" src="/images/img3.png" alt=""
+                                                    loading="lazy">
+                                            </div>
+
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="slide-video" data-class="video-fancybox" data-fancybox="videos"
+                                                data-type="iframe" data-src="/videos/ocean.mp4">
+                                                <img class="rounded-3" src="/images/img3.png" alt=""
+                                                    loading="lazy">
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="swiper-pagination"></div>
+                                    <div class="swiper-button-prev custom-prev">
+                                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="40" y="40" width="40" height="40" rx="4"
+                                                transform="rotate(-180 40 40)" fill="url(#paint0_linear_234_12165)"
+                                                fill-opacity="0.15" />
+                                            <rect x="39.5" y="39.5" width="39" height="39" rx="3.5"
+                                                transform="rotate(-180 39.5 39.5)"
+                                                stroke="url(#paint1_linear_234_12165)" stroke-opacity="0.5" />
+                                            <path
+                                                d="M12 20.0002L17.3333 25.3335M12 20.0002L17.3333 14.6668M12 20.0002L28.6666 20.0002"
+                                                stroke="white" stroke-width="2" />
+                                            <defs>
+                                                <linearGradient id="paint0_linear_234_12165" x1="71.0309" y1="80"
+                                                    x2="43.2182" y2="49.4239" gradientUnits="userSpaceOnUse">
+                                                    <stop stop-color="white" />
+                                                    <stop offset="1" stop-color="white" stop-opacity="0" />
+                                                </linearGradient>
+                                                <linearGradient id="paint1_linear_234_12165" x1="53.5052" y1="35.9794"
+                                                    x2="65.8763" y2="83.8144" gradientUnits="userSpaceOnUse">
+                                                    <stop stop-color="white" />
+                                                    <stop offset="1" stop-color="white" stop-opacity="0" />
+                                                </linearGradient>
+                                            </defs>
+                                        </svg>
+
+                                    </div>
+                                    <div class="swiper-button-next custom-next">
+                                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <rect width="40" height="40" rx="4" fill="url(#paint0_linear_234_12167)"
+                                                fill-opacity="0.15" />
+                                            <rect x="0.5" y="0.5" width="39" height="39" rx="3.5"
+                                                stroke="url(#paint1_linear_234_12167)" stroke-opacity="0.5" />
+                                            <path
+                                                d="M28 19.9998L22.6667 14.6665M28 19.9998L22.6667 25.3332M28 19.9998H11.3334"
+                                                stroke="white" stroke-width="2" />
+                                            <defs>
+                                                <linearGradient id="paint0_linear_234_12167" x1="31.0309" y1="40"
+                                                    x2="3.21822" y2="9.42391" gradientUnits="userSpaceOnUse">
+                                                    <stop stop-color="white" />
+                                                    <stop offset="1" stop-color="white" stop-opacity="0" />
+                                                </linearGradient>
+                                                <linearGradient id="paint1_linear_234_12167" x1="13.5052" y1="-4.02062"
+                                                    x2="25.8763" y2="43.8144" gradientUnits="userSpaceOnUse">
+                                                    <stop stop-color="white" />
+                                                    <stop offset="1" stop-color="white" stop-opacity="0" />
+                                                </linearGradient>
+                                            </defs>
+                                        </svg>
+
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                    <div class="row">
+                        <div class="col-12 col-lg-6 flex-grow-1 ffu">
+
+                            <div class="h4 mb-3">Дискатор</div>
+
+                            <p>Диски «ромашки» диаметром 68 см измельчают и перемешивают пожнивные остатки. Коническая
+                                форма
+                                диска обеспечивает стабильный угол атаки – независимо от износа диска и заглубления
+                            <p>Интенсивное перемешивание и рыхление почвы обеспечивают 2 ряда стоек с пружинной или
+                                гидравлической защитой и лапами. Глубина рыхления – 35 см
+                            </p>
+                            <p>Однорядная система тарельчатых дисков перед катком интенсивно измельчает крупные комья и
+                                заделывает борозды после лап глубокорыхлителя, выравнивая поверхность перед катком </p>
+                            </p>
+
+                            <a href="#" target="_blank" type="button" class="btn btn-outline-light mb-3">Скачать
+                                «чек-лист»
+                                почвенной оценки</a>
+                        </div>
+                        <div class="col-12 col-lg-6 col-516">
+
+                            <div class="bl-gradient rounded-3 bl-h">
+
+                                <div class="swiper swiper-gallery h-100">
+                                    <div class="swiper-wrapper h-100">
+                                        <div class="swiper-slide">
+                                            <div class="slide-video" data-class="video-fancybox" data-fancybox="videos"
+                                                data-type="iframe" data-src="/videos/ocean.mp4">
+                                                <img class="rounded-3" src="/images/img3.png" alt=""
+                                                    loading="lazy">
+                                            </div>
+
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="slide-video" data-class="video-fancybox" data-fancybox="videos"
+                                                data-type="iframe" data-src="/videos/ocean.mp4">
+                                                <img class="rounded-3" src="/images/img3.png" alt=""
+                                                    loading="lazy">
+                                            </div>
+
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="slide-video" data-class="video-fancybox" data-fancybox="videos"
+                                                data-type="iframe" data-src="/videos/ocean.mp4">
+                                                <img class="rounded-3" src="/images/img3.png" alt=""
+                                                    loading="lazy">
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="swiper-pagination"></div>
+                                    <div class="swiper-button-prev custom-prev">
+                                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="40" y="40" width="40" height="40" rx="4"
+                                                transform="rotate(-180 40 40)" fill="url(#paint0_linear_234_12165)"
+                                                fill-opacity="0.15" />
+                                            <rect x="39.5" y="39.5" width="39" height="39" rx="3.5"
+                                                transform="rotate(-180 39.5 39.5)"
+                                                stroke="url(#paint1_linear_234_12165)" stroke-opacity="0.5" />
+                                            <path
+                                                d="M12 20.0002L17.3333 25.3335M12 20.0002L17.3333 14.6668M12 20.0002L28.6666 20.0002"
+                                                stroke="white" stroke-width="2" />
+                                            <defs>
+                                                <linearGradient id="paint0_linear_234_12165" x1="71.0309" y1="80"
+                                                    x2="43.2182" y2="49.4239" gradientUnits="userSpaceOnUse">
+                                                    <stop stop-color="white" />
+                                                    <stop offset="1" stop-color="white" stop-opacity="0" />
+                                                </linearGradient>
+                                                <linearGradient id="paint1_linear_234_12165" x1="53.5052" y1="35.9794"
+                                                    x2="65.8763" y2="83.8144" gradientUnits="userSpaceOnUse">
+                                                    <stop stop-color="white" />
+                                                    <stop offset="1" stop-color="white" stop-opacity="0" />
+                                                </linearGradient>
+                                            </defs>
+                                        </svg>
+
+                                    </div>
+                                    <div class="swiper-button-next custom-next">
+                                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <rect width="40" height="40" rx="4" fill="url(#paint0_linear_234_12167)"
+                                                fill-opacity="0.15" />
+                                            <rect x="0.5" y="0.5" width="39" height="39" rx="3.5"
+                                                stroke="url(#paint1_linear_234_12167)" stroke-opacity="0.5" />
+                                            <path
+                                                d="M28 19.9998L22.6667 14.6665M28 19.9998L22.6667 25.3332M28 19.9998H11.3334"
+                                                stroke="white" stroke-width="2" />
+                                            <defs>
+                                                <linearGradient id="paint0_linear_234_12167" x1="31.0309" y1="40"
+                                                    x2="3.21822" y2="9.42391" gradientUnits="userSpaceOnUse">
+                                                    <stop stop-color="white" />
+                                                    <stop offset="1" stop-color="white" stop-opacity="0" />
+                                                </linearGradient>
+                                                <linearGradient id="paint1_linear_234_12167" x1="13.5052" y1="-4.02062"
+                                                    x2="25.8763" y2="43.8144" gradientUnits="userSpaceOnUse">
+                                                    <stop stop-color="white" />
+                                                    <stop offset="1" stop-color="white" stop-opacity="0" />
+                                                </linearGradient>
+                                            </defs>
+                                        </svg>
+
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="messages" role="tabpanel" aria-labelledby="messages-tab">
+                    <div class="row">
+                        <div class="col-12 col-lg-6 flex-grow-1 ffu">
+
+                            <div class="h4 mb-3">Сеялки</div>
+
+                            <p>Диски «ромашки» диаметром 68 см измельчают и перемешивают пожнивные остатки. Коническая
+                                форма
+                                диска обеспечивает стабильный угол атаки – независимо от износа диска и заглубления
+                            <p>Интенсивное перемешивание и рыхление почвы обеспечивают 2 ряда стоек с пружинной или
+                                гидравлической защитой и лапами. Глубина рыхления – 35 см
+                            </p>
+                            <p>Однорядная система тарельчатых дисков перед катком интенсивно измельчает крупные комья и
+                                заделывает борозды после лап глубокорыхлителя, выравнивая поверхность перед катком </p>
+                            </p>
+
+                            <a href="#" target="_blank" type="button" class="btn btn-outline-light mb-3">Скачать
+                                «чек-лист»
+                                почвенной оценки</a>
+                        </div>
+                        <div class="col-12 col-lg-6 col-516">
+
+                            <div class="bl-gradient rounded-3 bl-h">
+
+                                <div class="swiper swiper-gallery h-100">
+                                    <div class="swiper-wrapper h-100">
+                                        <div class="swiper-slide">
+                                            <div class="slide-video" data-class="video-fancybox" data-fancybox="videos"
+                                                data-type="iframe" data-src="/videos/ocean.mp4">
+                                                <img class="rounded-3" src="/images/img3.png" alt=""
+                                                    loading="lazy">
+                                            </div>
+
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="slide-video" data-class="video-fancybox" data-fancybox="videos"
+                                                data-type="iframe" data-src="/videos/ocean.mp4">
+                                                <img class="rounded-3" src="/images/img3.png" alt=""
+                                                    loading="lazy">
+                                            </div>
+
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="slide-video" data-class="video-fancybox" data-fancybox="videos"
+                                                data-type="iframe" data-src="/videos/ocean.mp4">
+                                                <img class="rounded-3" src="/images/img3.png" alt=""
+                                                    loading="lazy">
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="swiper-pagination"></div>
+                                    <div class="swiper-button-prev custom-prev">
+                                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="40" y="40" width="40" height="40" rx="4"
+                                                transform="rotate(-180 40 40)" fill="url(#paint0_linear_234_12165)"
+                                                fill-opacity="0.15" />
+                                            <rect x="39.5" y="39.5" width="39" height="39" rx="3.5"
+                                                transform="rotate(-180 39.5 39.5)"
+                                                stroke="url(#paint1_linear_234_12165)" stroke-opacity="0.5" />
+                                            <path
+                                                d="M12 20.0002L17.3333 25.3335M12 20.0002L17.3333 14.6668M12 20.0002L28.6666 20.0002"
+                                                stroke="white" stroke-width="2" />
+                                            <defs>
+                                                <linearGradient id="paint0_linear_234_12165" x1="71.0309" y1="80"
+                                                    x2="43.2182" y2="49.4239" gradientUnits="userSpaceOnUse">
+                                                    <stop stop-color="white" />
+                                                    <stop offset="1" stop-color="white" stop-opacity="0" />
+                                                </linearGradient>
+                                                <linearGradient id="paint1_linear_234_12165" x1="53.5052" y1="35.9794"
+                                                    x2="65.8763" y2="83.8144" gradientUnits="userSpaceOnUse">
+                                                    <stop stop-color="white" />
+                                                    <stop offset="1" stop-color="white" stop-opacity="0" />
+                                                </linearGradient>
+                                            </defs>
+                                        </svg>
+
+                                    </div>
+                                    <div class="swiper-button-next custom-next">
+                                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <rect width="40" height="40" rx="4" fill="url(#paint0_linear_234_12167)"
+                                                fill-opacity="0.15" />
+                                            <rect x="0.5" y="0.5" width="39" height="39" rx="3.5"
+                                                stroke="url(#paint1_linear_234_12167)" stroke-opacity="0.5" />
+                                            <path
+                                                d="M28 19.9998L22.6667 14.6665M28 19.9998L22.6667 25.3332M28 19.9998H11.3334"
+                                                stroke="white" stroke-width="2" />
+                                            <defs>
+                                                <linearGradient id="paint0_linear_234_12167" x1="31.0309" y1="40"
+                                                    x2="3.21822" y2="9.42391" gradientUnits="userSpaceOnUse">
+                                                    <stop stop-color="white" />
+                                                    <stop offset="1" stop-color="white" stop-opacity="0" />
+                                                </linearGradient>
+                                                <linearGradient id="paint1_linear_234_12167" x1="13.5052" y1="-4.02062"
+                                                    x2="25.8763" y2="43.8144" gradientUnits="userSpaceOnUse">
+                                                    <stop stop-color="white" />
+                                                    <stop offset="1" stop-color="white" stop-opacity="0" />
+                                                </linearGradient>
+                                            </defs>
+                                        </svg>
+
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </section>
+
+    <section class="mb-5">
+        <div class="container">
+
+            <div class="row d-flex flex-column-reverse flex-sm-row">
+                <div class="col-12 col-lg-6 flex-grow-1 ffu">
+                    <div class="bl-gradient rounded-3 bl-h">
+
+                        <div class="swiper swiper-gallery h-100">
+                            <div class="swiper-wrapper h-100">
+                                <div class="swiper-slide">
+                                    <div class="slide-video" data-class="video-fancybox" data-fancybox="videos"
+                                        data-type="iframe" data-src="/videos/ocean.mp4">
+                                        <img class="rounded-3" src="/images/img3.png" alt="" loading="lazy">
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper-button-prev custom-prev">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="40" y="40" width="40" height="40" rx="4" transform="rotate(-180 40 40)"
+                                        fill="url(#paint0_linear_234_12165)" fill-opacity="0.15" />
+                                    <rect x="39.5" y="39.5" width="39" height="39" rx="3.5"
+                                        transform="rotate(-180 39.5 39.5)" stroke="url(#paint1_linear_234_12165)"
+                                        stroke-opacity="0.5" />
+                                    <path
+                                        d="M12 20.0002L17.3333 25.3335M12 20.0002L17.3333 14.6668M12 20.0002L28.6666 20.0002"
+                                        stroke="white" stroke-width="2" />
+                                    <defs>
+                                        <linearGradient id="paint0_linear_234_12165" x1="71.0309" y1="80" x2="43.2182"
+                                            y2="49.4239" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="white" />
+                                            <stop offset="1" stop-color="white" stop-opacity="0" />
+                                        </linearGradient>
+                                        <linearGradient id="paint1_linear_234_12165" x1="53.5052" y1="35.9794"
+                                            x2="65.8763" y2="83.8144" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="white" />
+                                            <stop offset="1" stop-color="white" stop-opacity="0" />
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+
+                            </div>
+                            <div class="swiper-button-next custom-next">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="40" height="40" rx="4" fill="url(#paint0_linear_234_12167)"
+                                        fill-opacity="0.15" />
+                                    <rect x="0.5" y="0.5" width="39" height="39" rx="3.5"
+                                        stroke="url(#paint1_linear_234_12167)" stroke-opacity="0.5" />
+                                    <path d="M28 19.9998L22.6667 14.6665M28 19.9998L22.6667 25.3332M28 19.9998H11.3334"
+                                        stroke="white" stroke-width="2" />
+                                    <defs>
+                                        <linearGradient id="paint0_linear_234_12167" x1="31.0309" y1="40" x2="3.21822"
+                                            y2="9.42391" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="white" />
+                                            <stop offset="1" stop-color="white" stop-opacity="0" />
+                                        </linearGradient>
+                                        <linearGradient id="paint1_linear_234_12167" x1="13.5052" y1="-4.02062"
+                                            x2="25.8763" y2="43.8144" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="white" />
+                                            <stop offset="1" stop-color="white" stop-opacity="0" />
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+                <div class="col-12 col-lg-6 col-516">
+                    <div class="h1 mb-3">Совместные проекты </div>
+
+                    <p>DORF - Стратегический партнер для вашего успеха. DORF — это уверенность. Уверенность в том, что
+                        техника выйдет в поле в самый ответственный момент и выполнит работу на совесть. Уверенность в
+                        том, что инвестиция окупится экономией ресурсов и прибавкой урожая. Уверенность в том, что за
+                        каждым агрегатом стоит команда, которая разделяет ваши цели и готова их поддерживать.
+                    </p>
+                    <p>
+                        Мы создаем технику, которая умеет быть сильной. Станьте сильнее вместе с нами.
+                    </p>
+
+                    <button type="button" class="btn btn-outline-light mb-3" data-bs-toggle="modal"
+                        data-bs-target="#modal_form-feed" data-whatever="Хочу быть вашим дилером">
+                        Хочу быть вашим дилером
+                    </button>
+
+
+                </div>
+            </div>
+
+
+
+        </div>
+    </section>
+
+
+
+
+    <section class="mb-4">
+        <div class="container">
+            <div class="row">
+                <div class="h1 mb-3">География DORF</div>
+            </div>
+
+
+            <div class="btns-map">
+                <button type="button" class="btn btn-light me-2 active-" data-filter="all">Все</button>
+                <button type="button" class="btn btn-outline-light me-2" data-filter="central">Центральный ФО</button>
+                <button type="button" class="btn btn-outline-light me-2" data-filter="northwest">Северо-Западный
+                    ФО</button>
+                <button type="button" class="btn btn-outline-light me-2" data-filter="south">Южный ФО</button>
+                <button type="button" class="btn btn-outline-light me-2" data-filter="north-caucasus">Северо-Кавказский
+                    ФО</button>
+                <button type="button" class="btn btn-outline-light me-2" data-filter="volga">Приволжский ФО</button>
+                <button type="button" class="btn btn-outline-light me-2" data-filter="ural">Уральский ФО</button>
+                <button type="button" class="btn btn-outline-light me-2" data-filter="siberian">Сибирский ФО</button>
+                <button type="button" class="btn btn-outline-light me-2" data-filter="far-east">Дальневосточный
+                    ФО</button>
+            </div>
+
+
+
+
+        </div>
+    </section>
+
+    <div class="container container-map mb-5">
+        <div class="map-contact" id="contact-map"></div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Исходные метки с объектами
+            var allPoints = [
+                {
+                    "center": [56.33, 44.00],
+                    "name": '<div class="map-text ffu"><div class="opacity-50 mb-3">Нижний Новгород</div></div><div class="map-title ffu mb-3">Инвест Агро</div><div class="map-text ffu"><div class="opacity-50">+79170279197<br>Муниципальное образование Саратов, посёлок Зоринский, 3</div></div>',
+                    "district": "volga"  // Приволжский ФО
+                },
+                {
+                    "center": [29.322231297579037, 120.08561049999994],
+                    "name": "Офис Иу <br>义乌市，稠州北路，银海国际商务中心1377-6号，089库房，新伟15945481999。 15596453343",
+                    "district": "far-east" // Условно отнесём к Дальневосточному (Китай)
+                },
+                {
+                    "center": [43.80916591952559, 144.53105099999996],
+                    "name": "Склад Иу<br>义乌市荷叶塘聚宝路35号，089库房，新伟19957995089",
+                    "district": "far-east"
+                },
+                {
+                    "center": [43.80916591952559, 144.53105099999996],
+                    "name": "Склад Гуанчджоу<br>广东省佛山市南海区里水大道中131号联广鑫创客一楼6号，郭中信，18845316345",
+                    "district": "far-east"
+                }
+            ];
+
+            // Центры для каждого округа на случай, если меток нет
+            var districtCenters = {
+                "central": [55.76, 37.64],
+                "northwest": [59.93, 30.33],
+                "south": [47.22, 39.71],
+                "north-caucasus": [43.32, 45.70],
+                "volga": [56.33, 44.00],
+                "ural": [56.84, 60.65],
+                "siberian": [55.03, 82.92],
+                "far-east": [48.48, 135.08]
+            };
+
+            var myMap;
+            var allPlacemarks = [];
+
+            // Функция для фильтрации аккордеона
+            function filterAccordion(district) {
+                const accordionItems = document.querySelectorAll('.accordion-item');
+                const showAllButton = document.querySelector('.js-show-all');
+
+                // Скрываем кнопку "Показать больше" при любом фильтре кроме all
+                if (showAllButton) {
+                    showAllButton.classList.add('d-none');
+                }
+
+                if (district === 'all') {
+                    // При all: показываем все элементы
+                    accordionItems.forEach(item => {
+                        item.classList.remove('d-none');
+                    });
+
+                    // Проверяем количество элементов
+                    if (accordionItems.length > 2) {
+                        // Начиная со второго индекса добавляем d-none
+                        for (let i = 2; i < accordionItems.length; i++) {
+                            accordionItems[i].classList.add('d-none');
+                        }
+                    }
+
+                    // Показываем кнопку "Показать больше", если элементов больше 2
+                    if (accordionItems.length > 2 && showAllButton) {
+                        showAllButton.classList.remove('d-none');
+                    }
+                } else {
+                    // При других фильтрах: показываем только подходящие элементы
+                    accordionItems.forEach(item => {
+                        const itemDistrict = item.getAttribute('data-district');
+                        if (itemDistrict === district) {
+                            item.classList.remove('d-none');
+                        } else {
+                            item.classList.add('d-none');
+                        }
+                    });
+                }
+            }
+
+            // Функция для показа всех элементов
+            function showAllItems() {
+                const accordionItems = document.querySelectorAll('.accordion-item');
+                const showAllButton = document.querySelector('.js-show-all');
+
+                accordionItems.forEach(item => {
+                    item.classList.remove('d-none');
+                });
+
+                if (showAllButton) {
+                    showAllButton.classList.add('d-none');
+                }
+            }
+
+            // Устанавливаем начальный фильтр 'all'
+            filterAccordion('all');
+
+            // Обработчик для кнопки "Показать больше"
+            const showAllButton = document.querySelector('.js-show-all');
+            if (showAllButton) {
+                showAllButton.addEventListener('click', showAllItems);
+            }
+
+            window.filterAccordion = filterAccordion;
+
+            ymaps.ready(init);
+
+            function init() {
+                myMap = new ymaps.Map("contact-map", {
+                    center: [55.76, 37.64],
+                    zoom: 4,
+                    controls: ['zoomControl', 'fullscreenControl']
+                });
+
+                // Создаем все метки
+                for (var i = 0; i < allPoints.length; i++) {
+                    // Проверяем корректность координат
+                    if (allPoints[i].center && allPoints[i].center.length === 2) {
+                        var placemark = new ymaps.Placemark(
+                            allPoints[i].center,
+                            {
+                                balloonContent: allPoints[i].name,
+                                //balloonContentHeader: allPoints[i].district_name || allPoints[i].district
+                            },
+                            {
+                                preset: 'islands#blackDotIcon',
+                                balloonMaxWidth: 353
+                            }
+                        );
+                        // Сохраняем принадлежность к округу прямо в метке
+                        placemark.properties.set('district', allPoints[i].district);
+                        allPlacemarks.push(placemark);
+                    }
+                }
+
+                // Добавляем обработчики на кнопки
+                document.querySelectorAll('.btns-map .btn').forEach(function (btn) {
+                    btn.addEventListener('click', function () {
+                        var filterValue = this.getAttribute('data-filter');
+                        if (filterValue === 'all') {
+                            filterMarkers('all');
+                        } else if (filterValue) {
+                            filterMarkers(filterValue);
+                        }
+
+                        // Обновляем активный класс кнопок
+                        document.querySelectorAll('.btns-map .btn').forEach(function (b) {
+                            b.classList.remove('btn-light');
+                            b.classList.add('btn-outline-light');
+                        });
+                        this.classList.remove('btn-outline-light');
+                        this.classList.add('btn-light');
+                    });
+                });
+
+                // Показываем все метки при старте
+                filterMarkers('all');
+            }
+
+            function filterMarkers(filter) {
+                // Очищаем карту
+                myMap.geoObjects.removeAll();
+
+                // Массив для видимых меток
+                var visiblePlacemarks = [];
+
+                // Добавляем подходящие метки
+                for (var i = 0; i < allPlacemarks.length; i++) {
+                    var pm = allPlacemarks[i];
+                    var pmDistrict = pm.properties.get('district');
+
+                    if (filter === 'all' || pmDistrict === filter) {
+                        myMap.geoObjects.add(pm);
+                        visiblePlacemarks.push(pm);
+                    }
+                }
+
+                // Центрируем карту по видимым меткам
+                if (visiblePlacemarks.length > 0) {
+                    // Получаем границы всех видимых меток
+                    var coords = [];
+                    for (var i = 0; i < visiblePlacemarks.length; i++) {
+                        coords.push(visiblePlacemarks[i].geometry.getCoordinates());
+                    }
+
+                    // Если метка одна, используем её координаты с зумом
+                    if (coords.length === 1) {
+                        myMap.setCenter(coords[0], 10);
+                    } else {
+                        // Создаем границы из массива координат
+                        var bounds = ymaps.util.bounds.fromPoints(coords);
+                        myMap.setBounds(bounds, {
+                            checkZoomRange: true,
+                            zoomMargin: 70
+                        });
+                    }
+                } else {
+                    // Если меток для округа нет - показываем центр округа
+                    if (filter !== 'all' && districtCenters[filter]) {
+                        myMap.setCenter(districtCenters[filter], 5);
+                    } else {
+                        myMap.setCenter([55.76, 37.64], 4);
+                    }
+                }
+
+                // Отладочная информация
+                console.log('Фильтр: ' + filter + ', показано меток: ' + visiblePlacemarks.length);
+
+                // ФИЛЬТРАЦИЯ АККОРДЕОНА 
+                if (typeof window.filterAccordion !== 'undefined') {
+                    window.filterAccordion(filter);
+                }
+            }
+
+        });
+    </script>
+
+    <section class="mb-4">
+        <div class="container">
+
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <!-- Элементы аккордеона с атрибутом data-district -->
+                <div class="accordion-item" data-district="central" data-region="voronezh">
+                    <div class="accordion-header bl-gradient h4" id="acc1">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#sacc1" aria-expanded="true" aria-controls="sacc1">
+                            Воронежская область (Центральный ФО)
+                        </button>
+                    </div>
+                    <div id="sacc1" class="accordion-collapse collapse" aria-labelledby="acc1"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body ffu">
+                            <div class="row">
+                                <div class="col-12 col-xl-6 mb-3">
+                                    <div class="fw-bold color-white mb-3">ОАО «Пинский мехтранс»</div>
+                                    <p>225766, Воронежская обл., Ленинский р-н, ул.Солнечная, 1Б/5</p>
+                                    <p>8 (473) 62-39-94, 8 (473) 62-39-94, 8 (473) 62-39-75</p>
+                                    <p>pinsk-tc@mail.ru, mehtrans@brest.by</p>
+                                    <p>mehtrans.by</p>
+                                </div>
+                                <div class="col-12 col-xl-6 mb-3">
+                                    <div class="fw-bold color-white mb-3">ОАО «Пинский мехтранс»</div>
+                                    <p>225766, Воронежская обл., Ленинский р-н, ул.Солнечная, 1Б/5</p>
+                                    <p>8 (473) 62-39-94, 8 (473) 62-39-94, 8 (473) 62-39-75</p>
+                                    <p>pinsk-tc@mail.ru, mehtrans@brest.by</p>
+                                    <p>mehtrans.by</p>
+                                </div>
+                                <div class="col-12 col-xl-6 mb-3">
+                                    <div class="fw-bold color-white mb-3">ОАО «Пинский мехтранс»</div>
+                                    <p>225766, Воронежская обл., Ленинский р-н, ул.Солнечная, 1Б/5</p>
+                                    <p>8 (473) 62-39-94, 8 (473) 62-39-94, 8 (473) 62-39-75</p>
+                                    <p>pinsk-tc@mail.ru, mehtrans@brest.by</p>
+                                    <p>mehtrans.by</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item" data-district="central" data-region="moscow">
+                    <div class="accordion-header bl-gradient h4" id="acc2">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#sacc2" aria-expanded="true" aria-controls="sacc2">
+                            Московская область (Центральный ФО)
+                        </button>
+                    </div>
+                    <div id="sacc2" class="accordion-collapse collapse" aria-labelledby="acc2"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <div class="row">
+                                <div class="col-12 col-xl-6 mb-3">
+                                    <div class="fw-bold color-white mb-3">ООО «Московский транспорт»</div>
+                                    <p>143000, Московская обл., г. Одинцово, ул. Западная, 15</p>
+                                    <p>8 (495) 123-45-67</p>
+                                    <p>info@moscow-transport.ru</p>
+                                </div>
+                                <div class="col-12 col-xl-6 mb-3">
+                                    <div class="fw-bold color-white mb-3">ЗАО «Подмосковье Логистик»</div>
+                                    <p>141400, Московская обл., г. Химки, ул. Логистическая, 7</p>
+                                    <p>8 (495) 987-65-43</p>
+                                    <p>logistic@podmoskovie.ru</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item" data-district="volga" data-region="nizhny">
+                    <div class="accordion-header bl-gradient h4" id="acc3">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#sacc3" aria-expanded="true" aria-controls="sacc3">
+                            Нижний Новгород (Приволжский ФО)
+                        </button>
+                    </div>
+                    <div id="sacc3" class="accordion-collapse collapse" aria-labelledby="acc3"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <div class="row">
+                                <div class="col-12 col-xl-6 mb-3">
+                                    <div class="fw-bold color-white mb-3">ОАО «Нижегородский мехтранс»</div>
+                                    <p>603000, г. Нижний Новгород, ул. Механическая, 10</p>
+                                    <p>8 (831) 123-45-67</p>
+                                    <p>nn@mehtrans.ru</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item" data-district="central" data-region="novosibirsk">
+                    <div class="accordion-header bl-gradient h4" id="acc4">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#sacc4" aria-expanded="true" aria-controls="sacc4">
+                            Новосибирская область (Сибирский ФО)
+                        </button>
+                    </div>
+                    <div id="sacc4" class="accordion-collapse collapse" aria-labelledby="acc4"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <div class="row">
+                                <div class="col-12 col-xl-6 mb-3">
+                                    <div class="fw-bold color-white mb-3">ООО «Сибирский транзит»</div>
+                                    <p>630000, г. Новосибирск, ул. Транспортная, 5</p>
+                                    <p>8 (383) 246-78-90</p>
+                                    <p>siberia@transit.ru</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item" data-district="far-east" data-region="vladivostok">
+                    <div class="accordion-header bl-gradient h4" id="acc5">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#sacc5" aria-expanded="true" aria-controls="sacc5">
+                            Владивосток (Дальневосточный ФО)
+                        </button>
+                    </div>
+                    <div id="sacc5" class="accordion-collapse collapse" aria-labelledby="acc5"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <div class="row">
+                                <div class="col-12 col-xl-6 mb-3">
+                                    <div class="fw-bold color-white mb-3">ООО «Дальневосточный мехтранс»</div>
+                                    <p>690000, г. Владивосток, ул. Портовая, 25</p>
+                                    <p>8 (423) 234-56-78</p>
+                                    <p>dv@mehtrans.ru</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-3">
+                <button type="button" class="btn btn-light js-show-all">Показать больше</button>
+            </div>
+
+
+        </div>
+    </section>
+
+
+    <div id="app"></div>
+
+
+
+
+    <script src="/js/slinky-vanilla.js"></script>
+    <script src="/plugins/inputmask/inputmask.min.js"></script>
+    <script src="/js/scripts.js"></script>
+
+</main>
+<footer>
+    <div class="container">
+        <div class="row">
+
+            <div class="col-12 col-sm-12 col-lg-3 mb-3 m1-border order-1 order-sm-0">
+
+                <div class="row">
+                    <div class="col-12 col-sm-2 col-lg-12">
+                        <div class="mb-3">
+                            <img src="/images/logo.svg" alt="" width="98" height="34" class="f-logo">
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-5 col-md-4 col-lg-12 mb-3">
+                        <div class="socials">
+                            <a href="#" target="_blank">
+                                <i class="icon icon-max"></i>
+                            </a>
+                            <a href="#" target="_blank">
+                                <i class="icon icon-vk"></i>
+                            </a>
+                            <a href="#" target="_blank">
+                                <i class="icon icon-rutube"></i>
+                            </a>
+                            <a href="#" target="_blank">
+                                <i class="icon icon-telegram"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-5 col-md-6 col-lg-12">
+                        <a href="tel:" type="button" class="btn btn-outline-light">Перезвонить мне</a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4 mb-3 m2-border order-0 order-sm-1">
+
+                <div class="footer-menu">
+                    <div class="d-flex flex-column gap-3">
+                        <a class="nav-link" href="#">Глубокорыхлители</a>
+                        <a class="nav-link" href="#">Дискаторы</a>
+                        <a class="nav-link" href="#">Сеялки</a>
+                        <a class="nav-link" href="#">Гарантии/Достижения</a>
+                        <a class="nav-link" href="#">Сервис и запчасти</a>
+                        <a class="nav-link" href="#">О заводе</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4 m3-border order-2">
+                <div class="font-weight-bold text-lg-right">
+                    <div class="mb-3">
+                        Производственная площадка DORF
+                    </div>
+                    <div class="mb-3">
+                        г. Воронеж, ул. Ростовская, 78
+                    </div>
+
+                    <div class="mb-3">
+                        <a href="tel:+79009009090">
+                            +7 (962) 331 80 00
+                        </a>
+                    </div>
+                    <div class="mb-3">
+                        <a href="mailto:zakaz@dorf-tech.ru">
+                            zakaz@dorf-tech.ru
+                        </a>
+                    </div>
+                    <div class="mb-3">
+                      <button type="button" class="btn btn-light" data-bs-toggle="modal"
+                            data-bs-target="#modal_form-feed" data-whatever="Узнать цену">Узнать цену</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 m4-border order-3">
+                <div class="mb-3 opacity-50">
+                    © 2025 Dorf
+                </div>
+                <div class="mb-3 opacity-50">
+                    Общество с ограниченной ответственностью "ДОРФ" ОГРН 1243600007958 / ИНН 3663167916
+                </div>
+                <div class="mb-3 d-inline-flex gap-3 flex-wrap">
+                    <a class="text-decoration-underline" href="polite.html">Политика обработки персональных данных</a>
+                    <a class="text-decoration-underline" href="#">Политика конфендициальности</a>    
+                </div>
+                <div class="opacity-50">
+                    Мы используем файлы cookie, чтобы улучшить работу сайта и предоставить вам больше возможностей. <br>
+                    Продолжая использовать сайт, вы соглашаетесь с условиями использования cookie.
+                </div>
+            </div>
+
+        </div>
+    </div>
+</footer>
+
+
+<!-- modal start -->
+<div class="modal modal-custom fade" id="modal_form-feed" tabindex="-1" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-content_inner">
+                <button type="button" class="btn-close close-custom" data-bs-dismiss="modal"
+                    aria-label="Close"></button>
+                <div class="modal-title text-center fs-1">Узнать цену</div>
+                <p class="text-center"></p>
+                <form class="form-main ajax_form" id="form-feed" novalidate>
+                    <input type="text" class="s-message" name="s-message" value="">
+                    <div class="mb-3 position-relative gradient-border-wrapper">
+                        <input type="text" class="form-control" name="name" placeholder="Ваше имя" required>
+                    </div>
+                    <div class="mb-3 position-relative gradient-border-wrapper">
+                        <input type="tel" class="form-control" name="phone" placeholder="+7 (___) ___ - __ - __"
+                            required>
+                    </div>
+                    <div class="mb-3 position-relative text-center">
+                        <button type="submit" class="btn btn-primary w-100">Узнать цену</button>
+                    </div>
+                    <div class="col-12">
+                        <div class="mb-0 position-relative agreement">
+                            <div class="form-check">
+                                <input checked="" type="checkbox" class="form-check-input"
+                                    id="modal_form-feedm" name="agreement" required="">
+                                <label class="form-check-label" for="modal_form-feedm">
+                                    Согласие на обработку персональных данных. C политикой конфиденциальности ознакомлен
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <div class="form-main__result">
+                    <div class="form-title_result text-center h1"></div>
+                    <p class="form-description_result text-center"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal modal-custom fade" id="modal_form-result" tabindex="-1" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-content_inner">
+                <button type="button" class="btn-close close-custom" data-bs-dismiss="modal"
+                    aria-label="Close"></button>
+                <div class="modal-title text-center fs-1">Спасибо за заявку!</div>
+                <p class="text-center">Наш специалист свяжется с вами в течение дня</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        setupFormValidation(document.getElementById('form-feed'), {
+            hasAgreement: true,
+            successMessage: 'Сообщение успешно отправлено!',
+            modalFormId: 'modal_form-feed',
+            modalResultId: 'modal_form-result',
+            customData: {}
+        });
+    });
+</script>
+<script>
+    /* $(function () {
+        $("#form-feed").validate({
+            // rules: {
+            //     validationField: {
+            //         number: true,
+            //         required: true,
+            //     }
+            // },
+            // messages: {
+            //     validationField: {
+            //         number: "Enter an integer value.",
+            //         required: "Required Field",
+            //     }
+            // },
+            errorClass: 'custom-error',
+            //validClass: 'valid',
+        });
+    }); */
+</script>
+<!-- modal end -->
+
+</div>
+</div>
+</div>
+
+<script src="/plugins/video.js/dist/video.min.js"></script>
+</body>
+
+</html>
